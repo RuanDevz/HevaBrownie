@@ -67,7 +67,7 @@ function App() {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <header className={`fixed w-full z-50 transition-all duration-300 ${isHeaderSticky ? 'bg-white shadow-lg py-2' : 'bg-transparent py-4'}`}>
+      <header className={`fixed w-full z-50 transition-all duration-300 bg-white shadow-lg py-2`}>
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center">
             <div className=" flex justify-center items-center gap-4  text-2xl font-black text-[#ffb704] drop-shadow-md">
@@ -85,12 +85,11 @@ function App() {
               className="md:hidden"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              <Menu className="h-6 w-6" />
+              <Menu className="h-6 w-6 text-[#ffb704]" />
             </button>
           </div>
         </div>
         
-        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg">
             <div className="flex flex-col p-4 space-y-3">
