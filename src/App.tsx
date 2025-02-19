@@ -65,7 +65,7 @@ function App() {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       {/* Header */}
       <header className={`fixed w-full z-50 transition-all duration-300 bg-white shadow-lg py-2`}>
         <div className="container mx-auto px-4">
